@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand');
+
+.container {
+	width: 90%;
+	margin: auto;
+}
+
+body {
+	font-family: 'Patrick Hand', cursive;
+}
+
+header {
+	background-image: url('./../img/crianca.png');
+	background-size: 100%;
+}
+
+header > h3, h4 {
+	position: relative;
+	top: 2%;
+	right: 2%;
+
+	text-align: right;
+	color: white;
+	opacity: 0.75;
+}
+
+header > h3 { font-size: 32px; }
+
+header > h4 { font-size: 16px; }
+
+/* navbar */ 
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul.flex > li {
+	margin: auto;
+	padding: 16px;
+}
+
+ul.flex > li > a {
+	text-transform: uppercase;
+	font-weight: bold;
+	text-decoration: none;
+	color: rgb(127, 127, 255);
+}
+
+h1 {
+	margin: 32px;
+	
+	font-size: 48px;
+	text-transform: uppercase;
+	text-align: center;
+	color: rgb(3, 200, 45);
+}
+
+/* acabou navbar */
+/* index */
+
+section.col-half {
+	column-count: 2;
+	column-span: all;
+}
+
+.img-padrao { width: 100%; }
+
+.img-container { width: 90%; }
+
+.img-metade { width: 50%; }
+
+.redondo { border-radius: 24px; }
+
+.centralizado {
+	display: block;
+	margin: auto;
+}
+
+.ul-default { list-style-type: circle; }
+
+.ul-undotted { list-style-type: none; }
+
+.ul-default,
+.ul-undotted { line-height: 1.5; }
+
+.ul-undotted > li,
+.ul-default > li,
+section > label,
+section > p,
+cite { font-size: 24px; }
+
+section > p {
+	text-indent: 64px;
+	padding: 8px 0 8px 0;
+}
+
+figure > figcaption { font-size: 16px; }
+
+figure > figcaption,
+section > label,
+section > p,
+cite,
+dl,
+.ul-default > li,
+.ul-undotted > li {
+	color: black;
+	opacity: 0.75;
+}
+
+/* footer */
+
+footer {
+	background-image: url('./../img/crianca2.png');
+	background-size: 100%;
+}
+
+footer > address {
+	position: relative;
+	text-align: center;
+	top: 84%;
+
+	font-size: 24px;
+	color: white;
+	opacity: 0.75;
+}
+
+/* acabou footer */
+
+.bkgd-ff0 { background-color: #FF0; }
+
+h2 {
+	font-size: 32px;
+	text-transform: uppercase;
+	
+	margin: 16px 0 16px 0;
+	color: rgb(127, 127, 255);
+}
+
+.clausto { margin: 32px 0 32px 0; }
+
+.justify { text-align: justify; }
+
+cite {
+	position: relative;
+	left: 84%;
+}
+
+.a-none { text-decoration: none; }
+
+/* associar-se */
+
+.form {
+	display: flex;
+	width: 70%;
+	background-color: rgb(3, 200, 45);
+	color: white;
+}
+
+.form > .legend,
+.form > .legend > p {
+	padding: 16px;
+}
+
+.form .section {
+	flex-direction: column;
+	padding: 30px;
+}
+
+.form .section .control-group {
+	margin-top: 10px;
+}
+
+/* acabou associar-se */

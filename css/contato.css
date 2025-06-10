@@ -1,0 +1,34 @@
+.form{
+    display: flex;
+    width: 50%;
+    background-color: rgb(150, 150, 150);;
+    color: #FFF;
+}
+
+div > p {
+    text-align: center;
+    position: relative;
+    font-size: 30px;
+    margin: auto;
+    vertical-align: middle;
+}
+
+div .container {
+    min-height: 10em;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+section > p {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin: auto;
+    vertical-align: middle;
+}
+
+.glyphicon {
+    font-size: 40px;
+    top:50%;
+    left:50%;
+}

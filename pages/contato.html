@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="application-name" content="SEO" />
+    <meta name="author" content="br.edu.ifms" />
+    <meta name="description" content="Contato da AFaP-TEA" />
+    <meta name="generator" content="Visual Studio Code" />
+    <meta name="keywords" content="TEA, Autismo, Criança, AFaP-TEA" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+    <link rel="icon" type="image/x-icon" href="./../img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="./../css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./../css/index.css" />
+    <link rel="stylesheet" type="text/css" href="./../css/contato.css" />
+
+    <title>Contato – AMAC</title>
+
+    <style>
+        /* CSS para deixar o contato responsivo */
+
+        main.container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0.5px;
+        }
+
+        form.form.centralizado.redondo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-info {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            font-size: 1.2em;
+            color: #333;
+            margin-top: 0px;
+        }
+
+        .contact-info a {
+            display: flex;
+            align-items: center;
+            background-color: #ccc; /* cinza */
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin: 5px 10px 15px 0;
+            color: #000;
+            text-decoration: none;
+            white-space: nowrap;
+            transition: background-color 0.3s ease;
+            width: 250px; /* para cobrir um espaço uniforme */
+        }
+
+        .contact-info a:hover {
+            background-color: #bbb;
+            text-decoration: underline;
+            color: #007bff;
+        }
+
+        .contact-info span.glyphicon {
+            font-size: 1.5em;
+            margin-right: 8px;
+            vertical-align: middle;
+            color: #007bff;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 480px) {
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+            .contact-info a {
+                width: 100%;
+                justify-content: center;
+                white-space: normal;
+            }
+            main.container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h3>Diferente é o mundo que queremos!</h3>
+        <h4>Associação de Mães de Autistas de Crateús (AMAC)</h4>
+    </header>
+
+    <nav class="container">
+        <ul class="flex">
+            <li><a href="./../index.html">Home</a></li>
+            <li><a href="./quem-somos.html">Quem somos</a></li>
+            <li><a href="./tea.html">TEA</a></li>
+            <li><a href="./leis-e-direitos.html">Leis e direitos</a></li>
+            <li><a href="./eventos.html">Eventos</a></li>
+            <li><a href="./noticias.html">Notícias</a></li>
+            <li><a href="./como-colaborar.html">Como colaborar</a></li>
+            <li><a href="./associar-se.html">Associar-se</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+<main class="container">
+    <h1>Contato</h1>
+
+    <div>
+        <p>Converse com a diretoria AMAC.</p><br />
+    </div>
+
+    <form action="#" method="POST" class="form centralizado redondo">
+
+        <div class="contact-info">
+            <a href="tel:+558888996781658" aria-label="Ligar para (88) 8899678-1658">
+                <span aria-hidden="true"></span> (88) 8899678-1658
+            </a>
+            <a href="mailto:amac.crateus@gmail.com" aria-label="Enviar email para amac.crateus@gmail.com">
+                <span aria-hidden="true"></span> amac.crateus@gmail.com
+            </a>
+            <a href="https://www.instagram.com/amac.crateus?utm_source=ig_web_button_share_sheet&igsh=MW93MmszMXdpenlrag==" 
+               target="_blank" 
+               aria-label="Visite o Instagram da AMAC">
+                <span aria-hidden="true"></span> @amac.crateus
+            </a>
+        </div>
+    </form>
+</main>
+
+
+    <footer>
+<address style="display: block; max-width: 100%; word-wrap: break-word; white-space: normal; font-style: normal; font-weight: bold;">
+  <a href="https://isnex.netlify.app/" target="_blank" style="color: black; text-decoration: none; font-weight: bold;">
+    Desenvolvido por ISNEX
+  </a>
+</address>
+</footer>
+
+    <div class="bkgd-ff0"></div>
+
+    <script language="javascript" src="./../js/index.js"></script>
+      <!-- VLibras -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget();
+  </script>
+</body>
+
+</html>

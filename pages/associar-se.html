@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="application-name" content="SEO" />
+    <meta name="author" content="br.edu.ifms" />
+    <meta name="description" content="Página de cadastro" />
+    <meta name="generator" content="Visual Studio Code" />
+    <meta name="keywords" content="TEA, Autismo, Criança, AFaP-TEA" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/x-icon" href="./../img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="./../css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./../css/index.css" />
+    <link rel="stylesheet" type="text/css" href="./../css/associar-se.css" />
+
+    <style>
+        .control-group {
+            margin-bottom: 1rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .control-group label {
+            margin-bottom: 0.3rem;
+            font-weight: bold;
+        }
+
+        .control-group input,
+        .control-group select {
+            padding: 0.6rem;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: 1px solid #000000;
+        }
+
+        @media (max-width: 600px) {
+            .section {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .control-group {
+                width: 70%;
+            }
+        }
+
+        input[type="file"] {
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
+            padding: 0.4rem;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: white;
+        }
+
+        @media (max-width: 768px) {
+            input[type="file"] {
+                font-size: 0.9rem;
+                padding: 0.3rem;
+            }
+        }
+
+        .legend p {
+            font-size: 1.8rem;
+            font-weight: 60;
+            line-height: 1.0;
+            max-width: 800px;
+            /* opcional para limitar largura */
+        }
+
+        .centralizado {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .redondo {
+            border-radius: 10px;
+            padding: 20px;
+            background-color: rgb(3, 200, 45);
+        }
+
+        #nomesFilhosContainer {
+            width: 100%;
+        }
+    </style>
+
+    <title>Associar-se – AMAC</title>
+</head>
+
+<body>
+    <header>
+        <h3>Diferente é o mundo que queremos!</h3>
+        <h4>Associação de Mães de Autistas de Crateús (AMAC)</h4>
+    </header>
+
+    <nav class="container">
+        <ul class="flex">
+            <li><a href="./../index.html">Home</a></li>
+            <li><a href="./quem-somos.html">Quem somos</a></li>
+            <li><a href="./tea.html">TEA</a></li>
+            <li><a href="./leis-e-direitos.html">Leis e direitos</a></li>
+            <li><a href="./eventos.html">Eventos</a></li>
+            <li><a href="./noticias.html">Notícias</a></li>
+            <li><a href="./como-colaborar.html">Como colaborar</a></li>
+            <li><a href="#">Associar-se</a></li>
+            <li><a href="./contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <h1>Associar-se</h1>
+
+        <div class="legend">
+            <p>Associe-se à <strong>AMAC</strong> – Associação de Mães de Autistas de Crateús. Você terá papel fundamental na transformação de sonhos em realidade. Sua colaboração será essencial para o amparo a autistas e causas sociais importantes.</p>
+        </div>
+
+        <br />
+
+        <!-- FORMULÁRIO -->
+        <form id="formulario" action="#" method="POST" class="form centralizado redondo" enctype="multipart/form-data">
+            <div class="section">
+                <div class="control-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" placeholder="Seu nome completo" required />
+                </div>
+
+                <div class="control-group">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" name="telefone" id="telefone" placeholder="DDD + número (somente números)"
+                        pattern="[0-9]{11}" required />
+                </div>
+
+                <div class="control-group">
+                    <label for="endereco">Endereço</label>
+                    <input type="text" name="endereco" id="endereco" placeholder="Seu endereço completo" required />
+                </div>
+
+                <div class="control-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="seuemail@email.com" required />
+                </div>
+
+                <div class="control-group">
+                    <label for="quantosFilhos">Quantos filhos você tem?</label>
+                    <select name="quantosFilhos" id="quantosFilhos" required>
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="0">Nenhum</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4+">4 ou mais</option>
+                    </select>
+                </div>
+
+                <div id="nomesFilhosContainer"></div>
+
+                <div class="control-group">
+                    <label for="filhosTranstorno">Quantos filhos com algum transtorno você tem?</label>
+                    <select name="filhosTranstorno" id="filhosTranstorno" required>
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="0">Nenhum</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4+">4 ou mais</option>
+                    </select>
+                </div>
+
+                <div class="control-group">
+                    <label for="bolsaFamilia">Recebe Bolsa Família?</label>
+                    <select name="bolsaFamilia" id="bolsaFamilia" required>
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="Sim">Sim</option>
+                        <option value="Não">Não</option>
+                    </select>
+                </div>
+
+                <div class="control-group">
+                    <label for="bpc">Recebe BPC?</label>
+                    <select name="bpc" id="bpc" required>
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="Sim">Sim</option>
+                        <option value="Não">Não</option>
+                    </select>
+                </div>
+
+                <div class="control-group">
+                    <label for="laudoMedico">Possui laudo médico?</label>
+                    <select name="laudoMedico" id="laudoMedico" required>
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="Sim">Sim</option>
+                        <option value="Não">Não</option>
+                    </select>
+                </div>
+
+                <div class="control-group">
+                    <input type="submit" value="Enviar" style="background-color: #00fb08; color: rgb(16, 16, 16); padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 1rem;" />
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+<address style="display: block; max-width: 100%; word-wrap: break-word; white-space: normal; font-style: normal; font-weight: bold;">
+  <a href="https://isnex.netlify.app/" target="_blank" style="color: black; text-decoration: none; font-weight: bold;">
+    Desenvolvido por ISNEX
+  </a>
+</address>
+</footer>
+
+    <div class="bkgd-ff0"></div>
+
+    <!-- SCRIPT FUNCIONAL -->
+    <script>
+        const quantosFilhosSelect = document.getElementById("quantosFilhos");
+        const nomesFilhosContainer = document.getElementById("nomesFilhosContainer");
+
+        quantosFilhosSelect.addEventListener("change", function () {
+            const valor = this.value;
+            nomesFilhosContainer.innerHTML = ""; // Limpa antes
+
+            let qtd = 0;
+            if (valor === "4+") {
+                qtd = 4; // Limite para 4 campos mesmo para 4 ou mais
+            } else {
+                qtd = parseInt(valor);
+            }
+
+            if (qtd > 0) {
+                for (let i = 1; i <= qtd; i++) {
+                    const div = document.createElement("div");
+                    div.className = "control-group";
+                    div.innerHTML = `
+                        <label for="nomeFilho${i}">👤 Nome do filho(a) ${i}</label>
+                        <input type="text" name="nomeFilho${i}" id="nomeFilho${i}" placeholder="Nome do filho(a) ${i}" required />
+                    `;
+                    nomesFilhosContainer.appendChild(div);
+                }
+            }
+        });
+
+        document.getElementById("formulario").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const nome = document.getElementById("nome").value.trim();
+            const telefone = document.getElementById("telefone").value.trim();
+            const endereco = document.getElementById("endereco").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const quantosFilhos = document.getElementById("quantosFilhos").value;
+            const filhosTranstorno = document.getElementById("filhosTranstorno").value;
+            const bolsaFamilia = document.getElementById("bolsaFamilia").value;
+            const bpc = document.getElementById("bpc").value;
+            const laudoMedico = document.getElementById("laudoMedico").value;
+
+            // Validação simples
+            if (!nome || !telefone || !endereco || !email || !quantosFilhos || !filhosTranstorno || !bolsaFamilia || !bpc || !laudoMedico) {
+                alert("Por favor, preencha todos os campos obrigatórios.");
+                return;
+            }
+
+            // Validação do telefone
+            if (!/^\d{11}$/.test(telefone)) {
+                alert("Por favor, insira um número de telefone válido com DDD + 9 dígitos (somente números).");
+                return;
+            }
+
+            // Validação do email
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                alert("Por favor, insira um endereço de e-mail válido.");
+                return;
+            }
+
+            // Se tem filhos, valida nomes
+            let qtd = 0;
+            if (quantosFilhos === "4+") qtd = 4;
+            else qtd = parseInt(quantosFilhos);
+
+            let nomesFilhos = [];
+            for (let i = 1; i <= qtd; i++) {
+                const nomeFilho = document.getElementById(`nomeFilho${i}`);
+                if (nomeFilho && !nomeFilho.value.trim()) {
+                    alert(`Por favor, preencha o nome do filho(a) ${i}.`);
+                    return;
+                }
+                if (nomeFilho) {
+                    nomesFilhos.push(nomeFilho.value.trim());
+                }
+            }
+
+            const numeroWhatsApp = "5588996781658"; // Altere para o número real com DDI + DDD + número
+
+            // Monta a mensagem com emojis codificados para URL
+          let mensagem = encodeURIComponent(
+    "*Gostaria de me associar à AMAC*💙🤝✨\n\n" +
+    "👤 *Nome:* " + nome + "\n" +
+    "📞 *Telefone:* " + telefone + "\n" +
+    "🏡 *Endereço:* " + endereco + "\n" +
+    "✉ *Email:* " + email + "\n" +
+    "👶 *Quantos filhos possui:* " + quantosFilhos + "\n"
+);
+
+if (qtd > 0 && nomesFilhos.length > 0) {
+    nomesFilhos.forEach((nomeFilho, idx) => {
+        mensagem += encodeURIComponent("👤 *Nome do filho(a) " + (idx + 1) + ":* " + nomeFilho + "\n");
+    });
+}
+
+mensagem += encodeURIComponent(
+    "🧒 *Filhos com transtorno:* " + filhosTranstorno + "\n" +
+    "🎒 *Recebe Bolsa Família:* " + bolsaFamilia + "\n" +
+    "♿ *Recebe BPC:* " + bpc + "\n" +
+    "🩺 *Possui laudo médico:* " + laudoMedico
+);
+         const urlWhatsapp = `https://wa.me/${numeroWhatsApp}?text=${mensagem}`;
+
+            window.open(urlWhatsapp, "_blank");
+            
+            // Limpa o formulário após o envio
+            document.getElementById("formulario").reset();
+            nomesFilhosContainer.innerHTML = "";
+        });
+    </script>
+
+    <script src="./../js/index.js"></script>
+
+    <!-- VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+</body>
+
+</html>

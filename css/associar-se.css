@@ -1,0 +1,21 @@
+input[type=submit] {
+    background-color: rgb(2, 160, 36);
+    border: 1px solid rgb(2, 160, 36);
+    float: right;
+
+    color: white;
+    padding: 8px;
+
+    font-family: 'Patrick Hand', cursive;
+    font-size: 16px;
+
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(3, 200, 45);
+    border: 1px solid rgb(2, 160, 36);
+    color: white;
+}
