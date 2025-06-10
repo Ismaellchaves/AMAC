@@ -1,22 +1,80 @@
-# afap-tea
+# AMAC – Associação de Mães de Autistas de Crateús
 
-## Sumário
+Bem-vindo ao repositório oficial da **AMAC (Associação de Mães de Autistas de Crateús)**. Esta associação foi criada com o propósito de acolher, orientar, defender direitos e promover o bem-estar de crianças, adolescentes e adultos com Transtorno do Espectro Autista (TEA), bem como suas famílias, com foco especial nas mães que enfrentam essa jornada diariamente.
 
-- [afap-tea](#afap-tea)
-  - [Sumário](#sumário)
-  - [Motivação](#motivação)
-  - [Pilha de tecnologia](#pilha-de-tecnologia)
+---
 
-## Motivação
+## 📌 Objetivo
 
-Este foi o único repositório de código apresentado no [Curso Técnico Integrado em Informática do IFMS](https://www.ifms.edu.br/campi/campus-aquidauana/cursos/integrado/informatica) como requisito para obtenção da nota parcial de uma atividade da unidade curricular Desenvolvimento Web I, a qual consistiu em fazer um [site](https://afap-tea.web.app/) baseado na ideia atual do discente para o Trabalho de Conclusão de Curso. 
+A AMAC tem como missão:
 
-Quando o site foi feito, eu pretendia criar um site para divulgar a Associação AFaP TEA (Associação dos Familiares de Pessoas com Trastorno do Especto Autista) e facilitar o contato de pais com filhos candidatos a serem autistas com os membros da associação.
+- Lutar por políticas públicas mais inclusivas e acessíveis.
+- Criar uma rede de apoio emocional, jurídico, educacional e médico às mães de autistas.
+- Promover campanhas de conscientização e combate ao preconceito.
+- Realizar encontros, rodas de conversa, palestras e eventos educativos.
+- Articular com o poder público melhorias no atendimento de saúde e educação especial.
 
-## Pilha de tecnologia
+---
 
-As seguintes tecnologias foram utilizadas para desenvolver este app:
+## 🧩 Público-Alvo
 
-| Papel | Tecnologia |
-|-|-|
-| [Hospedagem](https://afap-tea.web.app/) | [Firebase](https://firebase.google.com/?hl=pt) |# AMAC
+- Mães, pais e responsáveis por pessoas com autismo.
+- Crianças, adolescentes e adultos com TEA.
+- Educadores, profissionais da saúde e voluntários.
+- Comunidade em geral de Crateús e região.
+
+---
+
+## 📍 Localização
+
+Crateús – Ceará, Brasil
+
+---
+
+## 💻 Este Repositório
+
+Este repositório é destinado ao desenvolvimento de sistemas, aplicativos, sites, documentos, relatórios e demais ferramentas que auxiliem nos projetos da AMAC. Alguns exemplos do que poderá conter:
+
+- Portal institucional da associação.
+- Sistema de cadastro de associados.
+- Agendamento de atendimentos ou eventos.
+- Blog de notícias e artigos sobre autismo.
+- Ferramentas de inclusão e acessibilidade digital.
+
+---
+
+## 🤝 Como Contribuir
+
+Se você deseja contribuir com este projeto, seja com código, design, ideias ou apoio institucional, siga os passos abaixo:
+
+1. Fork este repositório.
+2. Crie uma branch com sua contribuição: `git checkout -b minha-contribuicao`
+3. Commit suas mudanças: `git commit -m "minha contribuição"`
+4. Faça o push da branch: `git push origin minha-contribuicao`
+5. Abra um Pull Request.
+
+---
+
+## 👩‍💼 Equipe
+
+- **Fundadoras**: Mães guerreiras da cidade de Crateús que lutam por um futuro mais justo para seus filhos.
+- **Colaboradores**: Profissionais voluntários nas áreas de psicologia, fonoaudiologia, direito, educação, tecnologia e assistência social.
+
+---
+
+## 📞 Contato
+
+- 📧 Email: contato.amac.crateus@gmail.com  
+- 📱 Instagram: [@amac_crateus](https://instagram.com/amac_crateus) *(exemplo, substitua com link real se tiver)*
+- 🌐 Site: [https://amac-isnex.netlify.app](https://amac-isnex.netlify.app)
+
+---
+
+## 📄 Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
+
+---
+
+Juntos, somos mais fortes. 💙  
+AMAC – Amor que transforma.
