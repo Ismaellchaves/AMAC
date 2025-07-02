@@ -114,97 +114,51 @@
         </ul>
     </nav>
 
+    <h1>Associar-se</h1>
+
     <main class="container">
-        <h1>Associar-se</h1>
+    <!-- TERMO DE COMPROMISSO -->
+    <div class="form centralizado redondo" style="background-color: #040505;">
+      <h2 style="margin-bottom: 20px;">Termo de Compromisso da AMAC</h2>
 
-        <div class="legend">
-            <p>Associe-se à <strong>AMAC</strong> – Associação de Mães de Autistas de Crateús. Você terá papel fundamental na transformação de sonhos em realidade. Sua colaboração será essencial para o amparo a autistas e causas sociais importantes.</p>
-        </div>
+      <div style="background-color: #fff8e1; border: 1px solid #ffeeba; padding: 20px; border-radius: 8px; font-size: 1rem; color: #333; text-align: left; line-height: 1.8; max-height: 400px; overflow-y: auto;">
+        <p><strong>Termo de Compromisso e Responsabilidade</strong></p>
 
-        <br />
+        <p>Ao me associar à AMAC – Associação de Mães de Autistas de Crateús, comprometo-me a:</p>
 
-        <!-- FORMULÁRIO -->
-        <form id="formulario" action="#" method="POST" class="form centralizado redondo" enctype="multipart/form-data">
-            <div class="section">
-                <div class="control-group">
-                    <label for="nome">Nome</label>
-                    <input type="text" name="nome" id="nome" placeholder="Seu nome completo" required />
-                </div>
+        <ul style="padding-left: 20px;">
+          <li>Manter uma conduta ética, respeitosa, inclusiva e empática com todos os associados, colaboradores e familiares.</li>
+          <li>Respeitar e defender os direitos das pessoas com deficiência, conforme estabelecido na <strong>Lei Brasileira de Inclusão da Pessoa com Deficiência – Lei nº 13.146/2015</strong>.</li>
+          <li>Preservar a integridade física e emocional das crianças, adolescentes e adultos com TEA, conforme o <strong>Estatuto da Criança e do Adolescente – Lei nº 8.069/1990</strong>.</li>
+          <li>Não disseminar informações falsas, conteúdos sensíveis, discriminatórios ou incompatíveis com os princípios da AMAC.</li>
+          <li>Respeitar a privacidade dos membros, não divulgando dados, imagens ou informações sem consentimento.</li>
+          <li>Evitar atitudes como tumultos, agressões verbais, assédio, desinformação ou comportamentos que comprometam a paz e a missão do grupo.</li>
+          <li>Colaborar com ações, campanhas, eventos e demais atividades promovidas pela associação de forma voluntária e solidária.</li>
+          <li>Utilizar os canais de comunicação da associação de forma civilizada e respeitosa.</li>
+        </ul>
 
-                <div class="control-group">
-                    <label for="telefone">Telefone</label>
-                    <input type="tel" name="telefone" id="telefone" placeholder="DDD + número (somente números)"
-                        pattern="[0-9]{11}" required />
-                </div>
+        <p><strong>Fica expressamente proibido:</strong></p>
 
-                <div class="control-group">
-                    <label for="endereco">Endereço</label>
-                    <input type="text" name="endereco" id="endereco" placeholder="Seu endereço completo" required />
-                </div>
+        <ul style="padding-left: 20px;">
+          <li>Usar o nome ou imagem da AMAC para fins políticos, comerciais ou pessoais sem autorização formal da diretoria.</li>
+          <li>Divulgar fake news ou teorias não científicas relacionadas ao Transtorno do Espectro Autista.</li>
+          <li>Praticar qualquer forma de discriminação contra pessoas com deficiência ou seus familiares.</li>
+          <li>Cometer crimes virtuais, calúnia, difamação ou incitação ao ódio.</li>
+          <li>Desrespeitar as decisões da diretoria ou comprometer o bom funcionamento da associação.</li>
+        </ul>
 
-                <div class="control-group">
-                    <label for="email">E-mail</label>
-                    <input type="email" name="email" id="email" placeholder="seuemail@email.com" required />
-                </div>
+        <p>Declaro que li, compreendi e estou de acordo com todos os termos acima, assumindo total responsabilidade por minha conduta enquanto associado(a) da AMAC.</p>
+      </div>
 
-                <div class="control-group">
-                    <label for="quantosFilhos">Quantos filhos você tem?</label>
-                    <select name="quantosFilhos" id="quantosFilhos" required>
-                        <option value="" disabled selected>Selecione</option>
-                        <option value="0">Nenhum</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4+">4 ou mais</option>
-                    </select>
-                </div>
+      <label style="margin-top: 20px; display: block; text-align: left;">
+        <input type="checkbox" id="aceitoTermos" required style="margin-right: 8px;" />
+        Li e aceito os termos acima.
+      </label>
 
-                <div id="nomesFilhosContainer"></div>
-
-                <div class="control-group">
-                    <label for="filhosTranstorno">Quantos filhos com algum transtorno você tem?</label>
-                    <select name="filhosTranstorno" id="filhosTranstorno" required>
-                        <option value="" disabled selected>Selecione</option>
-                        <option value="0">Nenhum</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4+">4 ou mais</option>
-                    </select>
-                </div>
-
-                <div class="control-group">
-                    <label for="bolsaFamilia">Recebe Bolsa Família?</label>
-                    <select name="bolsaFamilia" id="bolsaFamilia" required>
-                        <option value="" disabled selected>Selecione</option>
-                        <option value="Sim">Sim</option>
-                        <option value="Não">Não</option>
-                    </select>
-                </div>
-
-                <div class="control-group">
-                    <label for="bpc">Recebe BPC?</label>
-                    <select name="bpc" id="bpc" required>
-                        <option value="" disabled selected>Selecione</option>
-                        <option value="Sim">Sim</option>
-                        <option value="Não">Não</option>
-                    </select>
-                </div>
-
-                <div class="control-group">
-                    <label for="laudoMedico">Possui laudo médico?</label>
-                    <select name="laudoMedico" id="laudoMedico" required>
-                        <option value="" disabled selected>Selecione</option>
-                        <option value="Sim">Sim</option>
-                        <option value="Não">Não</option>
-                    </select>
-                </div>
-
-                <div class="control-group">
-                    <input type="submit" value="Enviar" style="background-color: #00fb08; color: rgb(16, 16, 16); padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 1rem;" />
-                </div>
-            </div>
-        </form>
+      <button id="btnAssociar" style="margin-top: 20px; background-color: #00fb08; color: #111; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 1rem;">
+        Me Associar
+      </button>
+    </div>
     </main>
 
     <footer>
@@ -215,118 +169,21 @@
 </address>
 </footer>
 
-    <div class="bkgd-ff0"></div>
 
-    <!-- SCRIPT FUNCIONAL -->
-    <script>
-        const quantosFilhosSelect = document.getElementById("quantosFilhos");
-        const nomesFilhosContainer = document.getElementById("nomesFilhosContainer");
+  <!-- Redirecionamento ao formulário externo -->
+  <script>
+    document.getElementById("btnAssociar").addEventListener("click", function () {
+      const checkbox = document.getElementById("aceitoTermos");
+      if (!checkbox.checked) {
+        alert("Você deve ler e aceitar os termos antes de se associar.");
+        return;
+      }
 
-        quantosFilhosSelect.addEventListener("change", function () {
-            const valor = this.value;
-            nomesFilhosContainer.innerHTML = ""; // Limpa antes
-
-            let qtd = 0;
-            if (valor === "4+") {
-                qtd = 4; // Limite para 4 campos mesmo para 4 ou mais
-            } else {
-                qtd = parseInt(valor);
-            }
-
-            if (qtd > 0) {
-                for (let i = 1; i <= qtd; i++) {
-                    const div = document.createElement("div");
-                    div.className = "control-group";
-                    div.innerHTML = `
-                        <label for="nomeFilho${i}">👤 Nome do filho(a) ${i}</label>
-                        <input type="text" name="nomeFilho${i}" id="nomeFilho${i}" placeholder="Nome do filho(a) ${i}" required />
-                    `;
-                    nomesFilhosContainer.appendChild(div);
-                }
-            }
-        });
-
-        document.getElementById("formulario").addEventListener("submit", function (e) {
-            e.preventDefault();
-
-            const nome = document.getElementById("nome").value.trim();
-            const telefone = document.getElementById("telefone").value.trim();
-            const endereco = document.getElementById("endereco").value.trim();
-            const email = document.getElementById("email").value.trim();
-            const quantosFilhos = document.getElementById("quantosFilhos").value;
-            const filhosTranstorno = document.getElementById("filhosTranstorno").value;
-            const bolsaFamilia = document.getElementById("bolsaFamilia").value;
-            const bpc = document.getElementById("bpc").value;
-            const laudoMedico = document.getElementById("laudoMedico").value;
-
-            // Validação simples
-            if (!nome || !telefone || !endereco || !email || !quantosFilhos || !filhosTranstorno || !bolsaFamilia || !bpc || !laudoMedico) {
-                alert("Por favor, preencha todos os campos obrigatórios.");
-                return;
-            }
-
-            // Validação do telefone
-            if (!/^\d{11}$/.test(telefone)) {
-                alert("Por favor, insira um número de telefone válido com DDD + 9 dígitos (somente números).");
-                return;
-            }
-
-            // Validação do email
-            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-                alert("Por favor, insira um endereço de e-mail válido.");
-                return;
-            }
-
-            // Se tem filhos, valida nomes
-            let qtd = 0;
-            if (quantosFilhos === "4+") qtd = 4;
-            else qtd = parseInt(quantosFilhos);
-
-            let nomesFilhos = [];
-            for (let i = 1; i <= qtd; i++) {
-                const nomeFilho = document.getElementById(`nomeFilho${i}`);
-                if (nomeFilho && !nomeFilho.value.trim()) {
-                    alert(`Por favor, preencha o nome do filho(a) ${i}.`);
-                    return;
-                }
-                if (nomeFilho) {
-                    nomesFilhos.push(nomeFilho.value.trim());
-                }
-            }
-
-            const numeroWhatsApp = "5588996781658"; // Altere para o número real com DDI + DDD + número
-
-            // Monta a mensagem com emojis codificados para URL
-          let mensagem = encodeURIComponent(
-    "*Gostaria de me associar à AMAC*💙🤝✨\n\n" +
-    "👤 *Nome:* " + nome + "\n" +
-    "📞 *Telefone:* " + telefone + "\n" +
-    "🏡 *Endereço:* " + endereco + "\n" +
-    "✉ *Email:* " + email + "\n" +
-    "👶 *Quantos filhos possui:* " + quantosFilhos + "\n"
-);
-
-if (qtd > 0 && nomesFilhos.length > 0) {
-    nomesFilhos.forEach((nomeFilho, idx) => {
-        mensagem += encodeURIComponent("👤 *Nome do filho(a) " + (idx + 1) + ":* " + nomeFilho + "\n");
+      window.location.href = "https://3py2e8m9.forms.app/ficha-de-cadastro-de-membro-para-a-associacao-amac-associacao-de-maes-de-autistas-de-crateus-amac";
     });
-}
+  </script>
 
-mensagem += encodeURIComponent(
-    "🧒 *Filhos com transtorno:* " + filhosTranstorno + "\n" +
-    "🎒 *Recebe Bolsa Família:* " + bolsaFamilia + "\n" +
-    "♿ *Recebe BPC:* " + bpc + "\n" +
-    "🩺 *Possui laudo médico:* " + laudoMedico
-);
-         const urlWhatsapp = `https://wa.me/${numeroWhatsApp}?text=${mensagem}`;
-
-            window.open(urlWhatsapp, "_blank");
-            
-            // Limpa o formulário após o envio
-            document.getElementById("formulario").reset();
-            nomesFilhosContainer.innerHTML = "";
-        });
-    </script>
+    <div class="bkgd-ff0"></div>
 
     <script src="./../js/index.js"></script>
 
